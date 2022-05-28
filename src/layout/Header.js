@@ -203,7 +203,7 @@ export default function Header() {
               disablePadding
               sx={{ display: 'block' }}
               component={Link}
-              to={text}
+              to="/tags"
             >
               <ListItemButton
                 sx={{

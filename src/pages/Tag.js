@@ -1,6 +1,7 @@
 import { Box } from '@mui/material';
 import React from 'react';
 import axios from 'axios';
+import Modal from '../layout/Modal';
 
 /** Componente dummy usando el API dummy de Tasky */
 class TagPage extends React.Component {
@@ -21,14 +22,17 @@ class TagPage extends React.Component {
   render() {
     const { tags } = this.state;
     return (
-      <Box sx={{ flexGrow: 1, p: 6 }}>
-        <h1>Tags</h1>
-        <ul>
-          {tags.map((tag) => (
-            <li>{tag.name}</li>
-          ))}
-        </ul>
-      </Box>
+      <div>
+        <Box sx={{ flexGrow: 1, p: 6 }}>
+          <h1>Tags</h1>
+          <ul>
+            {tags.map((tag) => (
+              <li>{tag.name}</li>
+            ))}
+          </ul>
+        </Box>
+        <Modal />
+      </div>
     );
   }
 }
