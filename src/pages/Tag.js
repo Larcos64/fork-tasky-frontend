@@ -1,7 +1,7 @@
 import { Box } from '@mui/material';
 import React from 'react';
 import axios from 'axios';
-import Modal from '../layout/Modal';
+import Modal from './forms/AddTagForm';
 
 /** Componente dummy usando el API dummy de Tasky */
 class TagPage extends React.Component {
@@ -27,7 +27,10 @@ class TagPage extends React.Component {
           <h1>Tags</h1>
           <ul>
             {tags.map((tag) => (
-              <li>{tag.name}</li>
+              <li>
+                <b>{tag.name}</b>
+                <p>{tag.color}</p>
+              </li>
             ))}
           </ul>
         </Box>
