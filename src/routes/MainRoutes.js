@@ -23,10 +23,6 @@ const MainRoutes = {
       path: 'tags',
       element: <TagPage />,
     },
-    {
-      path: 'tasklist',
-      element: <TaskListPage />,
-    },
   ],
 };
 
