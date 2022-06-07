@@ -8,7 +8,6 @@ import {
   Typography,
   Divider,
   Drawer,
-
   ListItemText,
   ListItemIcon,
   ListItem,
@@ -197,13 +196,13 @@ export default function Header() {
             </ListItemButton>
           </ListItem>
           <Divider />
-          {['list1', 'list2', 'list3', 'list4'].map((text, index) => (
+          {['/tags', 'list2', 'list3', 'list4'].map((text, index) => (
             <ListItem
               key={text}
               disablePadding
               sx={{ display: 'block' }}
               component={Link}
-              to="/tags"
+              to={text}
             >
               <ListItemButton
                 sx={{

@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  PublicPage, HomePage, AboutPage, DummyPage, TagPage,
+  PublicPage, HomePage, AboutPage, DummyPage, TagPage, TaskListPage,
 } from '../pages';
 
 const MainRoutes = {
@@ -22,6 +22,10 @@ const MainRoutes = {
     {
       path: 'tags',
       element: <TagPage />,
+    },
+    {
+      path: 'tasklist',
+      element: <TaskListPage />,
     },
   ],
 };
